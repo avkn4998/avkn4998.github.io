@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/html-midterm/page1.html">Page 1</a>
+        <span> | </span>
+        <a href="/html-midterm/page2.html">Page 2</a>
+        <span> | </span>
+        <a href="/html-midterm/page3.html">Page 3</a>
+        <span> | </span>
+        <a href="/html-midterm/page4.html">Page 4</a>
+        <span> | </span>
+        <a href="/html-midterm/page5.html">Page 5</a>
+        <span> | </span>
+    </div>
+    
+<h1>Midterm Changelog</h1>
+<h2>Page 1 Changes</h2>
+<img src = "img/Page1Errors.png" alt ="Page 1 Errors" width ="400" height="200">
+
+<ul>
+    <li>1. Start tag h2 seen in table.
+    <ul>
+        <li>Didn't close the table, added a closing table bracket.</li>
+    </ul>
+    </li>
+        <li> 2. Cannot recover after the last error. 
+    <ul> 
+        <li>Once I added the closing table bracket the errors switched to:</li> 
+    </ul>
+    </li>
+    <li><img src="img/Page1Errors2.png" alt="Page 1 Errors 2"width ="400" height="200"></li>
+        <li>3. Language wasn't clarified
+    <ul>
+        <li>Added lang = "en" to opening html bracket</li>
+    </ul>
+    </li> 
+</ul>
+
+
+<h2>Page 2 Changes </h2>
+<p> When originally running through the validator, 15 errors appeared. After changing Errors 1-5, a new set of errors showed up. </p>
+
+<h4>Errors 1 through 5</h4>
+<img src="img/page2errors1.png" alt="Page 2 Errors 1"width ="350" height="300">
+
+<ul>
+        <li>1. Meant to bold "New Beehive Inn" with the "b" tag but forgot to add a closing tag.
+    <ul>
+        <li>Added the closing tag</li>
+    </ul>
+    </li>
+        <li>2. "p" tags were not lined up properly.
+    <ul> 
+        <li>Fixed indentation of "p" tags, made them all equally tabbed. </li>
+    </ul>
+    </li>
+        <li>3. Forgot closing "b" tag.
+    <ul>
+        <li>Closed element b with closing b tag.</li>
+    </ul>
+    </li>
+        <li>4. Switched b element with strong element.
+    <ul> 
+        <li>After switching this error, all other 10 errors we fixed and threw new errors. </li>
+    </ul>
+    </li>  
+</ul>
+
+<h4>New Errors</h4>
+<img src="img/pg2newerrors1.png" alt="Page 2 New Errors"width ="350" height="300">
+<img src="img/pg2newerrors2.png" alt ="Page 2 New Errors"width ="600" height="200">
+
+<ul>
+    <li>1. "b" tag was outside of "h2" tag
+    <ul>
+        <li>Switched so the "b" tag was insane of "h2" tags.</li>
+    </ul>
+    </li>
+        <li>2. Bad value "where do i go" link did not work.
+    <ul> 
+        <li>Changed to an actual segmented arch link from wikipedia</li> 
+    </ul>
+    </li>
+    <li>3. h6 was not closed.
+    <ul>
+        <li>Closed h6 element.</li>
+    </ul>
+    </li>
+    <li>4. Element p not allowed as a child element of "h6"
+    <ul>
+        <li>Switched "h2" and "h6" tags.</li>
+    </ul>  
+    </li>
+</ul>
+
+
+<h2>Page 3 Changes </h2>
+
+
+<p>Missing a title, meta, and link to css stylesheet, also missing HTML Syntax.</p>
+   <ul>
+    <li>Fixed this by adding:
+    <ul>
+        <li>"!DOCTYPE html"</li>
+        <li>"html lang = en"</li>
+        <li>"head"</li>
+    </ul>
+    </li>
+    <li>
+        Linked css by adding:
+    <ul> 
+        <li>"link rel = "stylesheet" href ="cars.css"</li>
+        </ul>
+    </li>
+   </ul>
+
+
+<h2>Page 4 Changes</h2>
+<img src="img/pg4errors1.png" alt="Page 4 Errors 1"width ="400" height="400">
+<img src="img/pg4errors2.png" alt="Page 4 Errors 2"width ="600" height="100">
+
+<ul>
+    <li>For errors 1-4: Missing the alt attribute to all "img"
+    <ul>
+        <li>Fixed those by adding alt attribute to all img</li>
+    </ul>
+    </li>
+    <li>Error 5: Forgot the "td" elements for lines 41 and 46
+    <ul>
+        <li>Added the "td" opening and closing elements.</li>
+    </ul>
+    </li>
+</ul>
+</body>
+</html>
