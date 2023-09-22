@@ -34,7 +34,7 @@
   .card1 p{
     margin:1em;
     color:white;
-    font-size:2;
+    font-size:1em;
   }
    
   .card1 article img{
@@ -46,11 +46,11 @@
     margin-top:-1em;
   }
 
-  .card1 footer{
-    color:white;
-    margin: 0;
-    padding: 1em;
-    font-size: 1em;
+  .card1 footer p{
+    color:black;
+    margin: 0.5em;
+    padding: 0em;
+    font-size: 1.5em;
   }
 
   html {
@@ -85,8 +85,8 @@
 
   .card2 p{
     margin:0;
-    color:white;
-    font-size:2;
+    color:#eeeeee;
+    font-size:1em;
   }
 
   .card2 article img{
@@ -98,11 +98,11 @@
     margin-top:-4em;
   }
 
-  .card2 footer{
+  .card2 footer p{
     color:black;
-    margin: 0;
+    margin: -1em;
     padding: 1em;
-    font-size: 1em;
+    font-size: 1.5em;
   }
    
 
