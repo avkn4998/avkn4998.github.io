@@ -1,9 +1,4 @@
 /* General styles - put these straight into your stylesheet */
-
-.card header {
-    margin: 0;
-    padding:2em;
-  }
   
   html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
@@ -11,7 +6,7 @@
     background-color: #ccc;
   }
   
-  body {
+  .card1 {
     width: 35em;
     height: 22em;
     margin: 5em auto;
@@ -21,43 +16,95 @@
   }
   
   
-  .card{
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    margin:3em;
+  .card1 header{
     border-radius: 0 0 1.5em 1.5em;
-    height:15em;
-    width:30em;
   }
   
-  .card article img {
+  .card1 article {
     max-height: 100%;
-    background-color:
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    padding: 1em;
   }
 
-  h2{
-    margin:1em;
+  .card1 h2{
+    line-height:1.5em;
     font-size: 2em;
-    height:1em;
-    float: left;
   }
 
-  p{
+  .card1 p{
     margin:1em;
     color:white;
-    font-size:0.2;
+    font-size:2;
   }
-  
-  
-  .card article img{
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+   
+  .card1 article img{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0.1));
     border-radius: 1.5em 1.5em 0 0;
     height:12em;
-    float: right;
+    position:absolute;
+    right: 14%;
+    margin-top:-1em;
   }
 
-  .card footer{
+  .card1 footer{
     color:white;
     margin: 0;
     padding: 1em;
-    font-size;
+    font-size: 1em;
   }
+
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 12px;
+    background-color: #ccc;
+  }
+  
+  .card2 {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: lightblue;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+  }
+
+  .card2 header{
+    border-radius: 0 0 1.5em 1.5em;
+  }
+  
+  .card2 article {
+    max-height: 100%;
+    padding: 3.5em;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  }
+
+  .card2 h2{
+    line-height:1.5em;
+    font-size: 2em;
+  }
+
+  .card2 p{
+    margin:0;
+    color:white;
+    font-size:2;
+  }
+
+  .card2 article img{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+    border-radius: 1.5em 1.5em 0 0;
+    height:12em;
+    position:absolute;
+    right: 14%;
+    margin-top:-4em;
+  }
+
+  .card2 footer{
+    color:black;
+    margin: 0;
+    padding: 1em;
+    font-size: 1em;
+  }
+   
+
+  
+  
