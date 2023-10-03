@@ -8,12 +8,11 @@
   
   body {
     margin: 0;
-    background:#ccc;
+    background-color:white;
   }
 
-  .top-image{
-    
-  }
+.image header {
+}
   
   article {
     width: 210mm;
