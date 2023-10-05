@@ -1,0 +1,46 @@
+body{
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    position: absolute;
+    top: 50px; 
+    left: 50px;
+}
+
+.box1, .box2, .box3,.box4{
+    width: 100px;
+    height: 50px;
+    position absolute;
+    border-style: solid;
+    border-color: white;
+    border-width: 15px;
+}
+
+.box1{
+    background-color: yellow;
+    left:0px;
+    position:absolute;
+}
+
+.box2{
+    background-color:red;
+    left: 100px;
+    position: absolute;
+}
+
+.box3{
+    background-color: blue;
+    left:200px;
+    position: absolute;
+}
+
+.box4{
+    background-color:aqua;
+    right: 100px;
+    bottom: 100px;
+    
+}
+
+
