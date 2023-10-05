@@ -1,3 +1,8 @@
+html {
+    font-family: sans-serif;
+    font-size:larger;
+  }
+
 body{
     width: 100px;
     height: 100px;
@@ -9,37 +14,47 @@ body{
     left: 50px;
 }
 
-.box1, .box2, .box3,.box4{
-    width: 100px;
-    height: 50px;
+.box1, .box2, .box3{
+    width: 150px;
+    height: 100px;
     position absolute;
     border-style: solid;
     border-color: white;
     border-width: 15px;
+    text-align:center;
 }
 
 .box1{
     background-color: yellow;
     left:0px;
     position:absolute;
+    text-align:var(200px);
 }
 
 .box2{
     background-color:red;
-    left: 100px;
+    left: 120px;
     position: absolute;
 }
 
 .box3{
-    background-color: blue;
-    left:200px;
+    background-color: aqua;
+    left:250px;
     position: absolute;
 }
 
 .box4{
-    background-color:aqua;
-    right: 100px;
-    bottom: 100px;
+    width: 300px;
+    height: 150px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 10px;
+    background-color:lightblue;
+    top: 600px;
+    left: 600px;
+    position: absolute;
+    font-size: xx-large;
+    text-align:center;
     
 }
 
