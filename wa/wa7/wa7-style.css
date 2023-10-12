@@ -1,77 +1,79 @@
-body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
-
-  img {
-      max-width: 100%;
-      display: block;
-  }
-  
-  .logo {
-    font-size: 200%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 980px;
-  }
-
-  
-  nav {
-    background-color: #000;
-    padding: .5em;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow:hidden;
-    background-color: black;
-  }
-  
-  nav li{
-    float: center;
-  }
-
-  nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none; 
-  }
-
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 1em;
-  }
-
-  .paragraph {
-    display:flex;
-    align-items:center;
-    padding: 10x;
-  }
-
-
-  .balloon-sq1, .balloon-sq2, .ballon-sq3, .balloon-sq4, .balloon-sq5{
-    max-width: auto;
-    max-height: auto;
-  }
-  
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-.container {
-  column-width: 10em;
-  column-rule: 1 px;
+body{
+  background-color: #fff;
+  margin:0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif; 
+  display: flex; 
+  flex-direction: column;
+  align-content: flex-start;
 }
 
-  .feature {
-      width: 200px;
+img{
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+font-size: 200%;
+padding: 50px 20px;
+margin: 0 auto;
+max-width: 980px;
+}
+
+.grid{
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+nav{
+  background-color: #000;
+  padding: .5em;
+  overflow: hidden; 
+  position: sticky;
+  top: 0;
+}
+
+nav ul{
+ margin: 0; 
+ padding:0;
+ list-style: none;
+ display: flex; 
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+
+nav a{
+  float:left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: .5em 1 em;
+}
+
+.photos{
+  list-style: none;
+  margin: 0; 
+  display: grid; 
+  padding: 0;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1px;
+  grid-column-gap: 1px;
+}
+
+.feature{
+  width: 200px;
+  float: left;
+  display: block; 
+  padding: .5em 1em;
+}
+
+@media screen and (max-width:500px) {
+  .grid, nav ul, photos{
+    display: flex;
+    flex-direction: column;
   }
+}
