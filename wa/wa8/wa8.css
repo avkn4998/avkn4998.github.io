@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: skyblue;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:navy;
+}
+
+nav:hover{
+    background-color: mediumaquamarine;
+}
+
+img{
+    width:30vw;
+    height: 30vh;
+}
+
+#blue-ball{
+    background-color: rgb(23, 105, 163);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0; 
+    animation-duration: 4s;
+    animation-name: ball2move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes ball2move{
+    from{top: 15vw;
+        left: 0vw;}
+    to {top: 0vw;
+        left: 15vw;}
+    }
