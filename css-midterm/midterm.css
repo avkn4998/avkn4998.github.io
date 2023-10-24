@@ -82,7 +82,6 @@ h2{
     width: 300px;
     height: 50px;
     position: absolute;
-
 }
 
 .box7{
@@ -90,4 +89,18 @@ h2{
     position: absolute;
     bottom: -1150px;
     left: 10px;
+}
+
+.box8{
+    background-color: skyblue;
+    position: absolute;
+    bottom: -900px;
+    left: 350px;
+}
+
+.box9{ 
+    background-color: skyblue;
+    position: absolute;
+    bottom: -1200px;
+    left: 700px;
 }
