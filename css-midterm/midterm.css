@@ -24,7 +24,6 @@ h2{
     width: 300px;
     height; 50px;
     position: absolute;
-    text-align; center;
     border-color: navy;
     border-width: 5px;
 }
@@ -51,18 +50,44 @@ h2{
 }
 
 .box4, .box5, .box6{
-    width: 300;
+    background-color: skyblue;
+    width: 300px;
     height: 50px;
     position: absolute;
-    text-align: center;
-    background-color: skyblue;
 }
 
 .box4{ 
-    background-color: skyblue
-    position: absolute; 
-    bottom: 50px;
-    left: 10px;
-    text-align: center;
+    background-color: skyblue;
+    position: absolute;
+    bottom: -450px;
+    left: 10px; 
 }
 
+.box5{
+    background-color: skyblue;
+    position: absolute;
+    bottom: -150px;
+    left: 350px;
+}
+
+.box6{
+    background-color: skyblue;
+    position: absolute;
+    bottom: -335px;
+    left: 700px;
+}
+
+.box7, .box8, .box9{
+    background-color: skyblue;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+
+}
+
+.box7{
+    background-color:skyblue;
+    position: absolute;
+    bottom: -1150px;
+    left: 10px;
+}
