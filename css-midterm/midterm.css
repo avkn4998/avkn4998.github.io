@@ -1,3 +1,4 @@
+@media screen and (min-width: 400px){
 h1{
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -6,7 +7,7 @@ h1{
 }
 
 body{ 
-    background-color: white;
+    background-color: tan;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h5{
@@ -19,12 +20,14 @@ h2{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: skyblue;
 }
+
 .container{
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    top: 50px;
-    left: 50px;
+display: flex;
+gap: 10px; 
+gap: 10px 20px;
+row-gap: 10px;
+column-gap: 20px;
+
 }
 
 .box1, .box2, .box3 {
@@ -112,6 +115,52 @@ h2{
     left: 700px;
 }
 
-@media screen and (min-width: 480px){
+.box10, .box11, .box12 {
+    background-color: skyblue;
+    width: 300px;
+    height: 50px;
+    position: absolute;  
+}
 
+.box10{
+    background-color:skyblue;
+    position: absolute;
+    bottom: -2150px;
+    left: 10px;   
+}
+
+.box11{
+    background-color: skyblue; 
+    position: absolute; 
+    bottom: -2000px;
+    left: 350px
+}
+
+.box12{
+    background-color: skyblue;
+    position: absolute;
+    bottom: -2200px;
+    left: 700px;
+}
+
+.box13, .box14 {
+    background-color: skyblue;
+    width: 300px;
+    height: 50px;
+    position: absolute; 
+}
+
+.box13{
+    background-color: skyblue;
+    position: absolute; 
+    bottom: -3000px;
+    left: 10px;
+}
+
+.box14{
+    background-color: skyblue;
+    position: absolute;
+    bottom: -3000px;
+    left: 350px;
+}
 }
