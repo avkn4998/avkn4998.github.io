@@ -1,6 +1,6 @@
 .head{
     font-size: xx-large;
-    background-color: skyblue;
+    background-color: #20C148;
     text-align: center;
     border: solid 5px;
     border-color: white;
@@ -14,10 +14,10 @@ body{
 .events{
     text-align: center; 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: skyblue;
+    background-color: #20C148;
     font-size:x-large;
     border: solid 5px;
-    border-color: tan;
+    border-color: skyblue;
 }
 .summary{
     width: auto;
@@ -41,7 +41,7 @@ body{
     text-align: center;
     background-color: skyblue;
     border: 5px solid; 
-    border-color: white;
+    border-color:#20C148 ;
 }
 
 @media screen and (max-width: 400px){
@@ -51,4 +51,5 @@ body{
         grid-template-columns: auto;
     }
 }
-@media screen and (min-width:1500px){}
+@media screen and (min-width:1500px){
+}
