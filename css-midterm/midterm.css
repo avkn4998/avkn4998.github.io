@@ -1,4 +1,4 @@
-@media screen and (min-width: 400px){
+
 h1{
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -10,157 +10,43 @@ body{
     background-color: tan;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h5{
-    text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}   
+ 
 
 h2{
     text-align: center; 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: skyblue;
 }
-
-.container{
-display: flex;
-gap: 10px; 
-gap: 10px 20px;
-row-gap: 10px;
-column-gap: 20px;
-
+.summary{
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 5px solid;
+    border-color: skyblue;
 }
 
-.box1, .box2, .box3 {
-    width: 300px;
-    height: 50px;
-    position: absolute;
-    border-color: navy;
-    border-width: 5px;
+.grid-container{
+    margin: 0 auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    height: auto;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
 }
-
-.box1{
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14 {
+    text-align: center;
     background-color: skyblue;
-    position: absolute;
-    left: 10px;
-    text-align: var(200px);
+    border: 5px solid; 
+    border-color: white;
 }
 
-.box2{
-    background-color: skyblue;
-    position: absolute;
-    left: 350px;
-    text-align: var(200px);  
+@media screen and (max-width: 400px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-columns: auto;
+    }
 }
-
-.box3{
-    background-color: skyblue;
-    position: absolute;
-    left: 700px;
-    text-align: var(200px)
-}
-
-.box4, .box5, .box6{
-    background-color: skyblue;
-    width: 300px;
-    height: 50px;
-    position: absolute;
-}
-
-.box4{ 
-    background-color: skyblue;
-    position: absolute;
-    bottom: -450px;
-    left: 10px; 
-}
-
-.box5{
-    background-color: skyblue;
-    position: absolute;
-    bottom: -150px;
-    left: 350px;
-}
-
-.box6{
-    background-color: skyblue;
-    position: absolute;
-    bottom: -335px;
-    left: 700px;
-}
-
-.box7, .box8, .box9{
-    background-color: skyblue;
-    width: 300px;
-    height: 50px;
-    position: absolute;
-}
-
-.box7{
-    background-color:skyblue;
-    position: absolute;
-    bottom: -1150px;
-    left: 10px;
-}
-
-.box8{
-    background-color: skyblue;
-    position: absolute;
-    bottom: -900px;
-    left: 350px;
-}
-
-.box9{ 
-    background-color: skyblue;
-    position: absolute;
-    bottom: -1200px;
-    left: 700px;
-}
-
-.box10, .box11, .box12 {
-    background-color: skyblue;
-    width: 300px;
-    height: 50px;
-    position: absolute;  
-}
-
-.box10{
-    background-color:skyblue;
-    position: absolute;
-    bottom: -2150px;
-    left: 10px;   
-}
-
-.box11{
-    background-color: skyblue; 
-    position: absolute; 
-    bottom: -2000px;
-    left: 350px
-}
-
-.box12{
-    background-color: skyblue;
-    position: absolute;
-    bottom: -2200px;
-    left: 700px;
-}
-
-.box13, .box14 {
-    background-color: skyblue;
-    width: 300px;
-    height: 50px;
-    position: absolute; 
-}
-
-.box13{
-    background-color: skyblue;
-    position: absolute; 
-    bottom: -3000px;
-    left: 10px;
-}
-
-.box14{
-    background-color: skyblue;
-    position: absolute;
-    bottom: -3000px;
-    left: 350px;
-}
-}
+@media screen and (min-width:1500px){}
