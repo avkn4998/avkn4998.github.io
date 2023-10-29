@@ -21,6 +21,7 @@ body{
     border: solid 5px;
     border-color: skyblue;
 }
+
 .summary{
     width: auto;
     height: auto;
@@ -46,7 +47,7 @@ body{
     border-color:#20C148 ;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 300px){
     .grid-container{
         display: grid;
         grid-template-columns: auto;
@@ -54,7 +55,7 @@ body{
         gap: 10px;
     }
 }
-@media screen and (min-width:1500px){
+@media screen and (min-width:1700px){
     .grid-container{
         display: grid;
         grid-template-columns: auto auto auto;
