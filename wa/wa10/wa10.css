@@ -1,0 +1,36 @@
+body {
+    font-family: helvetica, sans-serif;
+    width: 350px;
+    background-color: lightblue;
+    
+}
+.head{
+    font-size: xx-large;
+    background-color: #20C148;
+    text-align: center;
+    border: solid 5px;
+    border-color: dodgerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 100vw;
+    }
+    
+
+label {
+    font-weight: bold;
+}
+
+div {
+    padding-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 150px;
+}
+
+p {
+    background: dodgerblue;
+    color: navy;
+    text-align: center;
+    visibility: hidden;
+}
