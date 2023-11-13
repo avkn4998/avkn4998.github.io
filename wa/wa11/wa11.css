@@ -1,12 +1,15 @@
 h1 {
     font-family: helvetica, arial, sans-serif;
     text-align: center;
+    color: coral;
   }
   
   body {
     width: 640px;
     margin: 0 auto;
     background-color: tan;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
   
   .full-img {
@@ -15,7 +18,8 @@ h1 {
     width: 640px;
     height: 480px;
   }
-  
+
+
   .overlay {
     position: absolute;
     top: 0;
@@ -24,7 +28,8 @@ h1 {
     height: 480px;
     background-color: rgba(0,0,0,0);
     border: solid;
-    border-color: lightblue;
+    border-color: hotpink;
+    border-width: 8px;
   }
   
   button {
