@@ -1,46 +1,40 @@
-const newbtn = document.querySelector('#js-new-quote').
-addEventListener('click', getQuote);
-const answerbtn = document.querySelector('#js-tweet').
-addEventListener ('click', testFunction);
-let answer = "";
+const newBtn = document.querySelector('#js-new-quote').addEventListener('click', getQuote);
+const answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
 
-const questionTxt = document.querySelector("js-quote-text");
+const questionTxt = document.querySelector('#js-quote-text');
+let answerTxt = document.querySelector('#js-answer-text');
+
+let answer = '';
+
 
 const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
-async function getQuote () {
-    
-    //console.log('Test');
-
+async function getQuote() {
+   
     try {
         const response = await fetch(endpoint);
-        if(!response.ok) {
+
+        if (!response.ok) {
             throw Error(response.statusText);
         }
         const json = await response.json();
-        //console.log(json['question']);
-        displayQuote(json['question'])
-        answer =json['answer']
-
+        
+        displayQuote(json['question']);
+        answer = json['answer'];
+        answerTxt.textContent = '';
     }
-
     catch(err) {
         console.log(err);
         alert('Failed to fetch new quote');
     }
 }
 
-function displayQuote (question) {
-    const questionTxt = document.querySelector('#js-quote-text');
+function displayQuote(question) {
     questionTxt.textContent = question;
-
 }
 
-function displayAnswer (answer) {
-    const questionTxt = document.querySelector('#js-answer-text');
-    answerTxt.textContent = '';
-
-
+function displayAnswer() {
+    answerTxt.textContent = answer;
 }
 
 getQuote();
