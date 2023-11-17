@@ -1,39 +1,31 @@
-const newBtn = document.querySelector('#js-new-quote').addEventListener('click', getQuote);
-const answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
-
-const questionTxt = document.querySelector('#js-quote-text');
-let answerTxt = document.querySelector('#js-answer-text');
-
-let answer = '';
-
-const endpoint = 'https://api.quotable.io';
-
-async function getQuote() {
-   
-    try {
+document.addEventListener('DOMContentLoaded', function () {
+    const endpoint = 'https://api.quotable.io/random';
+    const quoteText = document.getElementById('quote-text');
+    const quoteAuthor = document.getElementById('quote-author');
+    const getQuoteButton = document.getElementById('get-quote');
+  
+    // Function to fetch a random quote
+    async function getQuote() {
+      try {
         const response = await fetch(endpoint);
-
-        if (!response.ok) {
-            throw Error(response.statusText);
-        }
-        const json = await response.json();
-        
-        displayQuote(json['question']);
-        answer = json['answer'];
-        answerTxt.textContent = '';
+        const data = await response.json();
+        return data;
+      } catch (error) {
+        console.error('Error fetching quote:', error);
+      }
     }
-    catch(err) {
-        console.log(err);
-        alert('Failed to fetch new quote');
+  
+    // Function to update the DOM with a new quote
+    function displayQuote() {
+      getQuote().then(quote => {
+        quoteText.textContent = quote.content;
+        quoteAuthor.textContent = `- ${quote.author}`;
+      });
     }
-}
-
-function displayQuote(question) {
-    questionTxt.textContent = question;
-}
-
-function displayAnswer() {
-    answerTxt.textContent = answer;
-}
-
-getQuote();
+  
+    // Event listener for the "Get Quote" button
+    getQuoteButton.addEventListener('click', displayQuote);
+  
+    // Display an initial quote when the page loads
+    displayQuote();
+  });
