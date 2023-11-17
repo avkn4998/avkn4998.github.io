@@ -1,6 +1,6 @@
 body {
+    background-color: #e0f7fa; /* Light blue-green background */
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     display: flex;
     align-items: center;
@@ -10,36 +10,40 @@ body {
   
   .container {
     text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
   
   #quote-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   #quote-text {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
+    color: #1565c0; /* Dark blue */
   }
   
   #quote-author {
     font-style: italic;
+    color: #558b2f; /* Olive green */
   }
   
-  #get-quote {
-    background-color: #007bff;
-    color: #fff;
+  #get-quote,
+  #share-twitter {
+    background-color: #4caf50; /* Green */
+    color: #ffffff; /* White */
     border: none;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 15px 25px;
+    font-size: 1.2em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s;
   }
   
-  #get-quote:hover {
-    background-color: #0056b3;
+  #get-quote:hover,
+  #share-twitter:hover {
+    background-color: #388e3c; /* Slightly darker green on hover */
   }
