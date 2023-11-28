@@ -87,6 +87,12 @@ const balls = [];
       
         requestAnimationFrame(loop);
       }
+    
+      loop();{
+        
+      }
+
+
 
    
 
