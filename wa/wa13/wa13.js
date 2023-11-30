@@ -1,7 +1,7 @@
 // script.js
 
-// Problem 1
-console.log('// Problem 1');
+
+console.log('Question 1');
 const employees = [
   { firstName: 'Sam', department: 'Tech', designation: 'Manager', salary: 40000, raiseEligible: true },
   { firstName: 'Mary', department: 'Finance', designation: 'Trainee', salary: 18500, raiseEligible: true },
@@ -9,7 +9,7 @@ const employees = [
 ];
 
 // Problem 2
-console.log('// Problem 2');
+console.log('Question 2');
 const company = {
   companyName: 'Tech Stars',
   website: 'www.techstars.site',
@@ -22,13 +22,13 @@ company.employees.push(newEmployee);
 console.log(company);
 
 // Problem 3
-console.log('// Problem 3');
+console.log('Question 3');
 // Calculate total salary for all company employees
 const totalSalary = company.employees.reduce((total, employee) => total + employee.salary, 0);
 console.log('Total Salary:', totalSalary);
 
 // Problem 4
-console.log('// Problem 4');
+console.log('Question 4');
 // Function to give a raise to eligible employees
 function giveRaise(employees) {
   employees.forEach(employee => {
@@ -43,7 +43,7 @@ giveRaise(company.employees);
 console.log(company);
 
 // Problem 5
-console.log('// Problem 5');
+console.log('Question 5');
 // Employees working from home
 const workingFromHome = ['Anna', 'Sam'];
 
