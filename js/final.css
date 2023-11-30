@@ -12,7 +12,7 @@ body {
     height: 40px;
     position: absolute;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
     border-radius: 50%;
     display: flex;
