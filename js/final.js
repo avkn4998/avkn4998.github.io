@@ -2,6 +2,22 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+let numbersStarted = false;
+
+document.getElementById('startButton').addEventListener('click', function() {
+    if (!numbersStarted) {
+        const phoneNumber = "1234567890"; 
+        spawnFloatingNumbers(phoneNumber);
+        numbersStarted = true;
+    }
+});
+
+
+function createFloatingNumbers(digit, count) {
+    for (let i = 0; i < count; i++) {
+        createFloatingNumber(digit);
+    }
+}
 function createFloatingNumber(number) {
     const floatingNumber = document.createElement('div');
     floatingNumber.className = 'floating-number';
@@ -19,6 +35,23 @@ function createFloatingNumber(number) {
 
     animateFloatingNumber(floatingNumber);
 }
+
+function createFloatingNumbers(digit, count) {
+    for (let i = 0; i < count; i++) {
+        createFloatingNumber(digit);
+    }
+}
+
+function spawnFloatingNumbers(phoneNumber) {
+    for (let i = 0; i < phoneNumber.length; i++) {
+        createFloatingNumbers(phoneNumber[i], 5); // Adjust the count as needed
+    }
+}
+
+const phoneNumber = "1234567890"; // Your phone number
+spawnFloatingNumbers(phoneNumber);
+
+
 
 function animateFloatingNumber(element) {
     const speedX = getRandomNumber(-3, 3);
