@@ -17,7 +17,6 @@ function createFloatingNumber(number) {
 
     document.body.appendChild(floatingNumber);
 
-
     animateFloatingNumber(floatingNumber);
 }
 
@@ -39,11 +38,16 @@ function animateFloatingNumber(element) {
         element.style.top = rect.top + speedY + 'px';
         element.style.left = rect.left + speedX + 'px';
 
-        requestAnimationFrame(updatePosition);
+        if (!element.clicked) {
+            requestAnimationFrame(updatePosition);
+        }
     }
 
     updatePosition();
 }
+
+
+
 
 function appendToPhoneNumber(number) {
     const phoneNumberInput = document.getElementById('phoneNumber');
