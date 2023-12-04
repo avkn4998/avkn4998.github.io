@@ -47,8 +47,9 @@ function animateFloatingNumber(element) {
 
 function appendToPhoneNumber(number) {
     const phoneNumberInput = document.getElementById('phoneNumber');
-    phoneNumberInput.textContent += number;
+    phoneNumberInput.value += number;
 }
+
 
 for (let i = 0; i < 10; i++) {
     createFloatingNumber(i);
