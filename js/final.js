@@ -2,17 +2,6 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-let numbersStarted = false;
-
-document.getElementById('startButton').addEventListener('click', function() {
-    if (!numbersStarted) {
-        const phoneNumber = "1234567890"; 
-        spawnFloatingNumbers(phoneNumber);
-        numbersStarted = true;
-    }
-});
-
-
 function createFloatingNumbers(digit, count) {
     for (let i = 0; i < count; i++) {
         createFloatingNumber(digit);
