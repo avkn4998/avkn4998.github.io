@@ -27,20 +27,25 @@ function animateFloatingNumber(element) {
     function updatePosition() {
         const rect = element.getBoundingClientRect();
 
-        if (rect.top + speedY < 0 || rect.bottom + speedY > window.innerHeight) {
-            speedY *= -1;
+        // Check if the element is going off the top or bottom of the screen
+        if (rect.top + speedY < 0) {
+            element.style.top = window.innerHeight + 'px';
+        } else if (rect.bottom + speedY > window.innerHeight) {
+            element.style.top = -rect.height + 'px';
+        } else {
+            element.style.top = rect.top + speedY + 'px';
         }
 
-        if (rect.left + speedX < 0 || rect.right + speedX > window.innerWidth) {
-            speedX *= -1;
+        // Check if the element is going off the left or right of the screen
+        if (rect.left + speedX < 0) {
+            element.style.left = window.innerWidth + 'px';
+        } else if (rect.right + speedX > window.innerWidth) {
+            element.style.left = -rect.width + 'px';
+        } else {
+            element.style.left = rect.left + speedX + 'px';
         }
 
-        element.style.top = rect.top + speedY + 'px';
-        element.style.left = rect.left + speedX + 'px';
-
-        if (!element.clicked) {
-            requestAnimationFrame(updatePosition);
-        }
+        requestAnimationFrame(updatePosition);
     }
 
     updatePosition();
