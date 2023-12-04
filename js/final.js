@@ -51,7 +51,22 @@ function animateFloatingNumber(element) {
     updatePosition();
 }
 
+function updateProgressBar() {
+    const phoneNumberInput = document.getElementById('phoneNumber');
+    const progressBar = document.getElementById('progressBar');
+    
+    // Set the width of the progress bar based on the percentage of completion
+    const percentage = (phoneNumberInput.textContent.length / 10) * 100; // Assuming a maximum length of 10
+    progressBar.style.width = percentage + '%';
+}
 
+function appendToPhoneNumber(number) {
+    const phoneNumberInput = document.getElementById('phoneNumber');
+    phoneNumberInput.textContent += number;
+
+    // Update the progress bar
+    updateProgressBar();
+}
 
 
 function appendToPhoneNumber(number) {
