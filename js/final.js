@@ -51,6 +51,16 @@ function animateFloatingNumber(element) {
     updatePosition();
 }
 
+function appendToPhoneNumber(number) {
+    const phoneNumberInput = document.getElementById('phoneNumber');
+    phoneNumberInput.value += number;
+}
+
+
+for (let i = 0; i < 10; i++) {
+    createFloatingNumber(i);
+}
+
 function updateProgressBar() {
     const phoneNumberInput = document.getElementById('phoneNumber');
     const progressBar = document.getElementById('progressBar');
@@ -69,12 +79,3 @@ function appendToPhoneNumber(number) {
 }
 
 
-function appendToPhoneNumber(number) {
-    const phoneNumberInput = document.getElementById('phoneNumber');
-    phoneNumberInput.value += number;
-}
-
-
-for (let i = 0; i < 10; i++) {
-    createFloatingNumber(i);
-}
