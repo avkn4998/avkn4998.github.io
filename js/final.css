@@ -1,5 +1,7 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: hwt-gothic-round, sans-serif;
+    font-style: normal;
+    font-weight: 900;   
     background-color: #f2f2f2;
     text-align: center;
     padding: 50px;
