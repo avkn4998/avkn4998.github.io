@@ -1,10 +1,20 @@
 body {
     font-family: hwt-gothic-round, sans-serif;
     font-style: normal;
+    font-size: xx-large;
     font-weight: 900;   
     background-color: #AFE5F3;
     text-align: center;
     padding: 50px;
+    
+}
+
+h1 {
+    color: #0A3A65;
+}
+
+p {
+ color:#0A3A65
 }
 
 .floating-number {
@@ -13,8 +23,8 @@ body {
     height: 40px;
     position: absolute;
     cursor: pointer;
-    background-color: blue;
-    color: white;
+    background-color: #0C2CF7;
+    color: #0CF70C;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -37,7 +47,7 @@ body {
 
 
 button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin: 10px;
     font-size: 16px;
     cursor: pointer;
@@ -48,17 +58,17 @@ button {
 
 button:hover {
     background-color: #4CAF50; 
-    color: white;
+    color: #0A3A65;
 }
 
 #submitBtn {
     background-color: #4994D6 ; 
-    color: white;
+    color: #0A3A65;
 }
 
 #restartBtn {
     background-color: #4994D6; 
-    color: white;
+    color: #0A3A65;
 }
 
 
