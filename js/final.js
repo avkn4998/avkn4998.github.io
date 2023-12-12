@@ -90,4 +90,23 @@ function appendToPhoneNumber(number) {
     phoneNumberInput.textContent += number;
 }
 
+function submitPhoneNumber() {
+    const phoneNumberInput = document.getElementById('phoneNumber');
+    alert('Phone number submitted: ' + phoneNumberInput.textContent);
+
+}
+
+function restartNumbers() {
+    const floatingNumbers = document.querySelectorAll('.floating-number');
+    floatingNumbers.forEach(number => {
+        document.body.removeChild(number);
+    });
+
+    const phoneNumberInput = document.getElementById('phoneNumber');
+    phoneNumberInput.textContent = '';
+
+    spawnFloatingNumbers(phoneNumber);
+}
+
+
 
