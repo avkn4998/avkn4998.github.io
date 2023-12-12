@@ -36,3 +36,32 @@ body {
 }
 
 
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+#submitBtn {
+    background-color: #008CBA; 
+    color: white;
+}
+
+#restartBtn {
+    background-color: #f44336; 
+    color: white;
+}
+
+
+
+
+
