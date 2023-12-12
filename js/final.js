@@ -109,16 +109,16 @@ function submitPhoneNumber() {
     const phoneNumber = phoneNumberInput.textContent.trim();
 
     if (isValidPhoneNumber(phoneNumber)) {
-        // Valid phone number, you can submit it or perform any desired action
+    
         alert('Phone number submitted: ' + phoneNumber);
     } else {
-        // Invalid phone number, show a custom error message
+        
         alert('You gotta be quicker than that!');
     }
 }
 
 function isValidPhoneNumber(phoneNumber) {
-    // Simple validation for a 10-digit phone number
+    
     const phoneNumberRegex = /^\d{10}$/;
     return phoneNumberRegex.test(phoneNumber);
 }
